@@ -1,0 +1,144 @@
+<html>
+<head>
+  <title>Payment</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background-color: #333;
+      padding-top: 20px;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+    }
+    .sidebar a:hover {
+      background-color: #555;
+    }
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+    .payment-container {
+      max-width: 480px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 24px;
+      margin-top: 20px;
+    }
+    .payment-container h2 {
+      margin-top: 0;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #333;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    .form-row {
+      display: flex;
+      gap: 12px;
+    }
+    .form-row .form-group {
+      flex: 1;
+    }
+    .summary {
+      background-color: #f7f7f7;
+      padding: 12px 16px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+    }
+    .pay-button {
+      width: 100%;
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .pay-button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+   <div class="sidebar">
+     <a href="hello.html#home">Home</a>
+     <a href="hello.html#about">About Us</a>
+     <a href="hello.html#portfolio">Portfolio</a>
+     <a href="hello.html#contact">Contact</a>
+     <a href="payment.html">Payment</a>
+   </div>
+
+   <div class="content">
+     <h1>Payment</h1>
+
+     <div class="payment-container">
+       <h2>Checkout</h2>
+
+       <div class="summary">
+         <span>Total</span>
+         <span>$0.00</span>
+       </div>
+
+       <form>
+         <div class="form-group">
+           <label for="name">Cardholder Name</label>
+           <input type="text" id="name" name="name" placeholder="John Doe">
+         </div>
+
+         <div class="form-group">
+           <label for="card">Card Number</label>
+           <input type="text" id="card" name="card" placeholder="1234 5678 9012 3456">
+         </div>
+
+         <div class="form-row">
+           <div class="form-group">
+             <label for="expiry">Expiry</label>
+             <input type="text" id="expiry" name="expiry" placeholder="MM/YY">
+           </div>
+           <div class="form-group">
+             <label for="cvc">CVC</label>
+             <input type="text" id="cvc" name="cvc" placeholder="123">
+           </div>
+         </div>
+
+         <div class="form-group">
+           <label for="email">Email</label>
+           <input type="email" id="email" name="email" placeholder="you@example.com">
+         </div>
+
+         <button type="submit" class="pay-button">Pay Now</button>
+       </form>
+     </div>
+
+     <p>Copyright &copy; 2026</p>
+   </div>
+</body>
+</html>
